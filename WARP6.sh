@@ -13,7 +13,7 @@ chmod +x /usr/local/bin/wgcf
 chmod +x /usr/bin/wireguard-go
 echo | wgcf register
 wgcf generate
-sed -i 's/engage.cloudflareclient.com/2606:4700:d0::a29f:c001/g' wgcf-profile.conf
+sed -i 's/engage.cloudflareclient.com/162.159.192.1/g' wgcf-profile.conf
 sed -i '/\:\:\/0/d' wgcf-profile.conf
 cp wgcf-profile.conf /etc/wireguard/wgcf.conf
 systemctl enable wg-quick@wgcf
