@@ -1,20 +1,14 @@
 
-#### EUserv IPV6添加WARP IPV4，脚本主要针对OpenVZ、LXC架构的IPV6 only VPS，添加WARP IPV4网络支持，默认已设置WARP IPV4优先
+#### Oracle IPV4添加WARP IPV6，脚本主要针对IPV4 only VPS，添加WARP IPV6网络支持，默认已设置WARP IPV4优先
 
-#### 原先详细视频教程及探讨：https://youtu.be/78dZgYFS-Qo
 
-#### 最新德鸡EUserv抛弃DNS64、自定义分流教程：即将发布。。。。
 
 -------------------------------------------------------------------------------------------------------
 
-##### 一：恢复EUserv官方DNS64（重装系统者，可直接跳到第二步脚本安装）
-```
-echo -e "search blue.kundencontroller.de\noptions rotate\nnameserver 2a02:180:6:5::1c\nnameserver 2a02:180:6:5::4\nnameserver 2a02:180:6:5::1e\nnameserver 2a02:180:6:5::1d" > /etc/resolv.conf
-```
 
 ##### 二、无须添加DNS64！！！Debian 10/Ubuntu 20.04系统脚本,一键到底（有无成功可查看脚本末尾提示）！
 ```
-wget -qO- https://cdn.jsdelivr.net/gh/YG-tsj/EUserv-addv4-warp/WARP4.sh|bash
+wget -qO- https://cdn.jsdelivr.net/gh/sunnynctu/EUserv-addv4-warp/WARP6.sh|bash
 ```
 
 ##### 三、搞定，安装你喜欢的各种脚本吧！
