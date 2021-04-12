@@ -15,7 +15,7 @@ echo | wgcf register
 wgcf generate
 sed -i 's/engage.cloudflareclient.com/162.159.192.1/g' wgcf-profile.conf
 sed -i '/\0.0.0.0\/0/d' wgcf-profile.conf
-sed -i 's/\1.1.1.1/\8.8.8.8\,1.1.1.1\,2001\:4860\:4860\:\:8888\,2400\:3200\:\:1/g' wgcf-profile.conf
+sed -i 's/1.1.1.1/8.8.8.8\,1.1.1.1\,2001\:4860\:4860\:\:8888\,2400\:3200\:\:1/g' wgcf-profile.conf
 cp wgcf-account.toml /etc/wireguard/wgcf-account.toml
 cp wgcf-profile.conf /etc/wireguard/wgcf.conf
 systemctl enable wg-quick@wgcf
