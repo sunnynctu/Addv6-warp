@@ -1,6 +1,7 @@
 
-#### 为IPV4服务器添加WARP IPV6，脚本主要针对IPV4 only VPS，添加WARP IPV6网络支持，可作为ipv4 only环境下连接ipv6 only机器的跳板机，亲测可在ipv4环境中连接EUserv
-**####默认已设置WARP IPV4优先**
+#### 为IPV4服务器添加WARP IPV6，脚本主要针对IPV4 only VPS，添加WARP IPV6网络支持，增加几个支持ipv6的DNS服务器（谷歌、阿里）
+**####修改后的小鸡可访问ipv6资源，也可作为ipv4 only环境下连接ipv6 only机器的跳板机，亲测可在ipv4环境中连接EUserv**
+**####默认已设置小鸡自带的IPV4优先，仅访问ipv6时启用通过WARP，为Cloudflare WARP节省资源**
 
 
 
@@ -82,7 +83,7 @@ wg
 
 ---------------------------------------------------------------------------------------------------------------------
 
-感谢P3terx、YG-tsj及原创者们，参考来源：
+感谢P3terx及原创者们，参考来源：
  
 https://p3terx.com/archives/debian-linux-vps-server-wireguard-installation-tutorial.html
 
