@@ -1,6 +1,6 @@
 
 #### 为IPV4服务器添加WARP IPV6，脚本主要针对IPV4 only VPS，添加WARP IPV6网络支持，可作为ipv4 only环境下连接ipv6 only机器的跳板机，亲测可在ipv4环境中连接EUserv
-####默认已设置WARP IPV4优先
+**####默认已设置WARP IPV4优先**
 
 
 
@@ -9,11 +9,13 @@
 
 ##### Debian 10/Ubuntu 20.04系统脚本,一键到底！
 ```
-wget -qO- https://cdn.jsdelivr.net/gh/sunnynctu/EUserv-addv6-warp/WARP6.sh|bash
+wget -qO- https://cdn.jsdelivr.net/gh/sunnynctu/Addv6-warp/WARP6.sh|bash
 ```
 
-##### 三、搞定,尝试连接你的ipv6 only 小鸡吧
-
+##### 搞定,输入以下命令查看是否获得ipv6地址，尝试跳板连接你的ipv6 only 小鸡吧
+```
+curl -6 ip.p3terx.com
+```
 ------------------------------------------------------------------------------------------------------------- 
 ##### 分流配置文件(以下默认全局IPV4优先，还可设置全局IPV6、分流IPV4优先域名、分流IPV6优先域名，共4种情况，详情见视频教程)
 ```
