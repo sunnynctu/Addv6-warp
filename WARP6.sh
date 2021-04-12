@@ -22,3 +22,4 @@ systemctl enable wg-quick@wgcf
 systemctl start wg-quick@wgcf
 rm -f WARP6* wgcf* wireguard-go*
 grep -qE '^[ ]*precedence[ ]*::ffff:0:0/96[ ]*100' /etc/gai.conf || echo 'precedence ::ffff:0:0/96  100' | sudo tee -a /etc/gai.conf
+curl -6 ip.p3terx.com
